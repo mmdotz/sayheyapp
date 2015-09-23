@@ -1,2 +1,19 @@
 <h1>Heys#index</h1>
+<h1>SayHey!</h1>
+
 <p>Find me in app/views/heys/index.html.erb</p>
+
+<h3>Your friends have been saying hey!<h3>
+
+<ul>
+  <% heys.each do |hey| %>
+  <li>
+    <section class="heys_list">
+    <%= hey.body %> by <%= hey.sayer.handle %>
+    </section>
+  </li>
+    <% end %>
+</ul>
+<%= link_to( "Next Page"
+
+<footer>Back to top</footer>
