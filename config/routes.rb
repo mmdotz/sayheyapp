@@ -1,23 +1,7 @@
 Rails.application.routes.draw do
-  get 'heys/index'
 
-  get 'heys/show'
-
-  get 'heys/create'
-
-  get 'heys/update'
-
-  get 'heys/destroy'
-
-  get 'sayers/index'
-
-  get 'sayers/show'
-
-  get 'sayers/create'
-
-  get 'sayers/update'
-
-  get 'sayers/destroy'
+  resources: sayers
+  resources: heys
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
