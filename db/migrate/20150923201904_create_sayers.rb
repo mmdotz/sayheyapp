@@ -1,7 +1,7 @@
 class CreateSayers < ActiveRecord::Migration
   def change
     create_table :sayers do |t|
-      t.string :handle
+      t.string :handle, null: false
 
       t.timestamps null: false
     end
