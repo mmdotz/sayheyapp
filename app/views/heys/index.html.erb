@@ -4,16 +4,17 @@
 <p>Find me in app/views/heys/index.html.erb</p>
 
 <h3>Your friends have been saying hey!<h3>
-
-<ul>
-  <% heys.each do |hey| %>
-  <li>
-    <section class="heys_list">
-    <%= hey.body %> by <%= hey.sayer.handle %>
-    </section>
-  </li>
-    <% end %>
-</ul>
-<%= link_to( "Next Page"
+<p>
+  <ul>
+    <% heys.each do |hey| %>
+    <li>
+      <section class="heys_list">
+      <%= hey.body %> ---by <%= hey.sayer.handle %>
+      </section>
+    </li>
+      <% end %>
+  </ul>
+</p>
+<%= link_to( "Next Page", root_path(page: page + 1)) %>
 
 <footer>Back to top</footer>

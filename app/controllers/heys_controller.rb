@@ -1,8 +1,10 @@
 class HeysController < ApplicationController
   def index
-    page = parems([:page]).to_i
-    heys = Hey.all
-    render locals: { heys, page  }
+    params.inspect
+    page = (params[:page]).to_i
+
+    heys  = Hey.limit(25).offset(page * 10)
+    render locals: { heys: heys, page: page }
   end
 
 
@@ -17,4 +19,5 @@ class HeysController < ApplicationController
 
   def destroy
   end
+
 end
