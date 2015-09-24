@@ -12,9 +12,7 @@ This is a Twitter clone called SayHey. Users are called Sayers and Tweets are ca
 [UMLs](/IMG_0968.JPG)
 [mockups of final browser pages](/IMG_0966.JPG)
 
-All of the deliverables above must be linked to in your readme.
-The readme must include a link to the site live on heroku.
-The site must be styled.
-The site must have a navigation. Every page should be accessible in some way without going to the URL bar.
+##To view the app
+Navigate to `https://powerful-cove-2642.herokuapp.com/`
 
-##
+

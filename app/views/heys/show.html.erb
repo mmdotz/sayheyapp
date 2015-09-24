@@ -1,2 +1,14 @@
-<h1>Heys#show</h1>
+<h1>SayHey!</h1>
 <p>Find me in app/views/heys/show.html.erb</p>
+
+<h3>Your friends have been saying Hey!<h3>
+
+<section class="single_hey">
+  <p>
+    <%= hey.sayer.handle %> says:
+    <%= hey.body %><br> Go <%= link_to( "Home", root_path(:page)) %>
+   to view another Hey.
+  </p>
+
+</section>
+
