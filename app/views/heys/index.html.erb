@@ -1,6 +1,6 @@
 <h1>SayHey!</h1>
 
-<p>Find me in app/views/heys/index.html.erb</p>
+<!-- <p>Find me in app/views/heys/index.html.erb</p> -->
 
 <h3>Your friends have been saying hey!<h3>
 <p>
@@ -8,7 +8,9 @@
     <% heys.each do |hey| %>
     <li>
       <section class="heys_list">
-      <%= hey.body %> ---by <%= hey.sayer.handle %>
+      <a href="/heys/<%= hey.id %>"><%= hey.body %> </a>
+       ---by <%= hey.sayer.handle %>
+
       </section>
     </li>
       <% end %>
