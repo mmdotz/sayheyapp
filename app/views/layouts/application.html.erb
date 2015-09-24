@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 
-<header>SayHey!</header>
+<header><%= link_to( "SayHey!", root_path(new_hey_path))%></header>
 <body>
 
 <%= yield %>

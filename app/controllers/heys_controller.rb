@@ -12,6 +12,11 @@ class HeysController < ApplicationController
     render locals: { hey: hey }
   end
 
+  def new
+    hey = Hey.new
+    render locals: { hey: hey }
+  end
+
   def create
   end
 
