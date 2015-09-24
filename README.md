@@ -9,9 +9,8 @@ This is a Twitter clone called SayHey. Users are called Sayers and Tweets are ca
 
 ##Requirements
 
-UMLs and mockups of final browser pages:
-(sayheyapp/IMG_0968.JPG)
-(sayheyapp/IMG_0969.JPG)
+[UMLs](/IMG_0968.JPG)
+[mockups of final browser pages](/IMG_0969.JPG)
 
 All of the deliverables above must be linked to in your readme.
 The readme must include a link to the site live on heroku.
