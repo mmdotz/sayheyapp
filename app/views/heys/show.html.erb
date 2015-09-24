@@ -1,14 +1,17 @@
 <h1>SayHey!</h1>
-<p>Find me in app/views/heys/show.html.erb</p>
-
+<!-- <p>Find me in app/views/heys/show.html.erb</p>
+ -->
 <h3>Your friends have been saying Hey!<h3>
 
 <section class="single_hey">
-  <p>
+  <h4>
     <%= hey.sayer.handle %> says:
-    <%= hey.body %><br> Go <%= link_to( "Home", root_path(:page)) %>
-   to view another Hey.
-  </p>
+  </h4>
+    <p><%= hey.body %></p>
+    <br>
+    <p>Go <%= link_to( "Home", root_path(:page)) %>
+      to view another Hey.
+    </p>
 
 </section>
 

@@ -6,9 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
+<header>SayHey!</header>
 <body>
 
 <%= yield %>
 
 </body>
+
+
+<footer>
+  <%= link_to( "Back to top", root_path(:page)) %>
+</footer>
 </html>
