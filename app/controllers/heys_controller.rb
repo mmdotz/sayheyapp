@@ -18,6 +18,15 @@ class HeysController < ApplicationController
   end
 
   def create
+    hey = Hey.new
+    hey.body = params.fetch(:hey).fetch(:body)
+    hey.sayer_id = params.fetch(:hey).fetch(:sayer_id)
+    hey.save
+      if hey.save
+        redirect_to heys_path
+      else
+        redirect_to :new
+      end
   end
 
   def update
